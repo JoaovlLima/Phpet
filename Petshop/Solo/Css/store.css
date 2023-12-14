@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ruda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+body {
+    background-color: #FFF9F0;
+}
+
+.filtro {
+position: absolute;
+border: 2px solid black;
+height: 55vw;
+width: 14vw;
+margin-top: 130px;
+left: 2vw;
+background-color: white;
+}
+
+.filtro label {
+   font-size:18px;
+   
+}
+
+.filtro input {
+    margin-left: 6px;
+    margin-top: 17px;
+    height: 16px;
+    width: 16px;
+}
+
+.catalago {
+    position: absolute;
+    left: 38vh;
+    height: 100%;
+    width: 170vh;
+    background-color: #FFF9F0;
+
+}
+
+.catalago h2 {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.catalago h6{
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    opacity: 80%;
+}
+
+.card-1 {
+    height: 28.5vw;
+    width: 22vw;
+    border-radius: 10px;
+    border: 1px  solid black;
+    position: relative;
+    left: 1vw;
+    margin-top: 50px;
+    background-color: white;
+   cursor: pointer;
+}
+
+.card-1 p{
+    background-color: white;
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#img1 {
+    width: 21.2vw;
+    height: 20vw;
+}
+
+.card-2 {
+    height: 28.5vw;
+    width: 22vw;
+    border-radius: 10px;
+    border: 1px  solid black;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 3.5vw;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.card-2 p{
+    background-color: white;
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card-3 {
+    height: 28.5vw;
+    width: 22vw;
+    border-radius: 10px;
+    border: 1px  solid black;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 2.5vw;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.card-3 p{
+    background-color: white;
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.produtos {
+    height: 32vw;
+    display: flex;
+    width: 100%;
+}
+
+.card-1:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.card-2:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.card-3:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+/* Footer  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ruda&display=swap');
+
+footer {
+    height: 23vw;
+    width: 100%;
+    background-color: #FFF2F2;
+    border: 2px solid black;
+    margin-top: 75vw;
+}
+
+
+.f1 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+    left: 39.6vw;
+}
+
+#instagram {
+    height: 3.5vw;
+    width: 3.5vw;
+    margin-top: 2vw;
+}
+
+#facebook {
+ height: 5vw;
+    width: 5vw;
+    margin-top: 1.2vw;
+}
+
+#twitter {
+    height: 3.1vw;
+       width: 3.1vw;
+       margin-top: 2.2vw;
+}
+
+footer p{
+    color: #7A1858;
+    font-family: 'Ruda', sans-serif;
+    font-size: 1vw;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.f2  {
+    display: flex;
+    justify-content: space-around;
+    width: 16vw;
+    left: 42.2vw;
+    position: relative;
+    margin-top: 2vw;
+}
+
+#contato {
+margin-top: 2vw;
+}
+
+#line {
+    height: 4vw;
+}
+
+#sobre{
+    margin-top: 2vw;
+}
+
+#instagram:hover, #facebook:hover, #twitter:hover {
+transform: scale(1.15);
+transition: 0.3s;
+}
+
+#sobre:hover, #contato:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        margin-top: 40vw;
+    }
+}

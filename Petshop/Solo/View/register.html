@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Css/register.css">
+    <link rel="stylesheet" href="../Css/header.css">
+</head>
+<body>
+    <!-- HEADER -->
+   
+    <nav>
+        <div class="header1">
+            <a  href=""><img id="logo" src="../Img/Logo.png" alt="Logo"></a>
+            <a  href=""><img id="telefone" src="../Img/telefone.png" alt="Contato"></a>
+            <a  href=""><img id="carrinhoCompra" src="../Img/carrinhoCompra.png" alt="Carrinho de Compra"></a>
+            <a  href=""><img id="usuario" src="../Img/user.png" alt="Usuário"></a>
+            <div class="menuHb">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+        </div>
+        <div class="header2">
+            <ul class="navLink">
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Veterinário</a></li>
+                <li><a href="#">Banho</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li id="bg"><a href="#">Carrinho</a></li>
+                <li id="bg"><a href="#">Conta</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- SCREEN -->
+    <section class="register">
+     <form class="form" action="../Connection/logicaCadastro.php" method="POST">
+        <h2>Cadastro</h2>
+        <label for="">Nome Completo</label><br>
+        <input required type="text" name="nome">
+        <br>
+        <label for="">E-mail</label><br>
+        <input required type="email" name="email" id="">
+        <br>
+        <label for="">CPF</label><br>
+        <input required id="cpf" minlength="14" type="text" name="cpf">
+        <br>
+        <label for="">Telefone</label><br>
+        <input required id="phone" minlength="14" type="text" name="telefone" >
+        <br>
+        <label for="">Data de Nascimento</label><br>
+        <input required type="date" name="idade" id="">
+        <br>
+        <label for="">Senha</label><br>
+        <input required type="password" name="senha" id="">
+        <br>
+        <label for="">Confirmar Senha</label><br>
+        <input required type="password" name="confSenha" id="">
+        <br>
+        <button type="submit" name="submit">Registrar</button>
+     </form>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <div class="f1">
+    <a href=""><img id="instagram" src="../Img/instagram 1.png" alt="Instagram"></a>
+    <a href=""><img id="facebook" src="../Img/facebook 1.png" alt="Instagram"></a>
+    <a href=""><img id="twitter" src="../Img/twitter 1.png" alt="Instagram"></a>
+</div>
+<div class="f2">
+    <a href=""><p id="sobre">Sobre</p></a>
+    <img id="line" src="../Img/Line 2.png" alt="line">
+    <a href=""><p id="contato">Contato</p></a>
+</div>
+    
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+<script>
+    $('#cpf').mask('000.000.000-00');
+    $('#phone').mask('(00) 00000-0000');
+</script>
+<script src="../Js/navbar.js"></script>
+</body>
+</html>

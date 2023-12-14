@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF9F0;
+}
+
+.form h2{
+    margin-bottom: 6vh;
+    margin-left: 5vh;
+    font-size: 5vh;
+}
+.register {
+    height:100vh;
+    width: 50%;
+    position: relative;
+}
+
+.register label {
+    font-size: 2.5vh;
+}
+
+.register input {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightgray;
+    height: 6vh;
+    width: 35vh;
+    font-size: 1.2vw;
+    margin-bottom: 6vh;
+    padding: 10px;
+
+}
+
+::-webkit-calendar-picker-indicator{
+    height: 3.2vh;
+    width: 3.2vw;
+}
+
+.register input:hover {
+    background-color: white;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.register input:focus {
+    background-color: white;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+
+.register button {
+    background-color:#7A1858 ;
+    height: 12vh;
+    width: 35vh;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.register button:hover {
+    background-color: white;
+    color: #7A1858;
+    transition: 0.3s;
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.register button:focus {
+    background-color: aliceblue;
+}
+
+.form {
+    margin-left: 40vw;
+    margin-top: 4vh;
+}
+
+/* ------ Footer --------------  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ruda&display=swap');
+
+footer {
+    height: 19vw;
+    width: 100%;
+    background-color: #FFF2F2;
+    border: 2px solid black;
+    margin-top: 40vw;
+}
+
+
+.f1 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+    left: 39.6vw;
+}
+
+#instagram {
+    height: 3.5vw;
+    width: 3.5vw;
+    margin-top: 2vw;
+}
+
+#facebook {
+ height: 5vw;
+    width: 5vw;
+    margin-top: 1.2vw;
+}
+
+#twitter {
+    height: 3.1vw;
+       width: 3.1vw;
+       margin-top: 2.2vw;
+}
+
+footer p{
+    color: #7A1858;
+    font-family: 'Ruda', sans-serif;
+    font-size: 1vw;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.f2  {
+    display: flex;
+    justify-content: space-around;
+    width: 16vw;
+    left: 42.2vw;
+    position: relative;
+    margin-top: 2vw;
+}
+
+#contato {
+margin-top: 2vw;
+}
+
+#line {
+    height: 4vw;
+}
+
+#sobre{
+    margin-top: 2vw;
+}
+
+#instagram:hover, #facebook:hover, #twitter:hover {
+transform: scale(1.15);
+transition: 0.3s;
+}
+
+#sobre:hover, #contato:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        margin-top: 60vw;
+    }
+
+    .form {
+        position: relative;
+        left: -10vw;
+    }
+}

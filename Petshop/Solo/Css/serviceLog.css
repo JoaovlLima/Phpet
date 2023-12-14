@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ruda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+body {
+    background-color: #FFF9F0;
+}
+
+#banner {
+    height: 70vh;
+    width: 80vw;
+    border-radius: 7vh;
+    position: relative;
+    left: 10vw;
+    top: 1vw;
+    
+}
+

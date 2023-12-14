@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Css/home.css">
+     <link rel="stylesheet" href="../Css/header.css">
+</head>
+<body>
+
+    <nav>
+        <div class="header1">
+            <a  href=""><img id="logo" src="../Img/Logo.png" alt="Logo"></a>
+            <a  href=""><img id="telefone" src="../Img/telefone.png" alt="Contato"></a>
+            <a  href=""><img id="carrinhoCompra" src="../Img/carrinhoCompra.png" alt="Carrinho de Compra"></a>
+            <a  href=""><img id="usuario" src="../Img/user.png" alt="Usuário"></a>
+            <div class="menuHb">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+        </div>
+        <div class="header2">
+            <ul class="navLink">
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Veterinário</a></li>
+                <li><a href="#">Banho</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li id="bg"><a href="#">Carrinho</a></li>
+                <li id="bg"><a href="#">Conta</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Carrossel -->
+<main>
+  <img src="../Img/Banner1.png" class="slide" alt="">
+  <img src="../Img/Banner2.png" class="slide" alt="">
+  <img src="../Img/Banner3.png" class="slide" alt="">
+</main>
+
+    <button onclick="goRetornar()">
+        <img id="retornar" src="../Img/arrow.png" alt="">
+    </button>
+    <button onclick="goAvancar()">
+        <img id="avancar" src="../Img/arrow.png" alt="">
+    </button>
+
+<!-- Produtos -->
+<section>
+<h1>Produtos Recomendados</h1>
+
+<div class="card-1">
+    <img id="img1" src="../Img/Produtos/1.jpg" alt="">
+    <p>Ração Golden Special para Cães Adultos</p>
+    <p>R$ 154,99</p>
+</div>
+
+<div class="card-2">
+    <img id="img1" src="../Img/Produtos/2.jpg" alt="">
+    <p>Refeição Natural Zee Dog Kitchen </p>
+    <p>R$ 109,99</p>
+</div>
+
+<div class="card-3">
+    <img id="img1" src="../Img/Produtos/3.jpg" alt="">
+    <p>Super Secão Citrus Tapete Higiênico</p>
+    <p>R$ 99,99</p>
+</div>
+</section>
+<section>
+    <div class="card-1">
+        <img id="img1" src="../Img/Produtos/4.jpg" alt="">
+        <p>Ração Golden Special para Cães Adultos</p>
+        <p>R$ 154,99</p>
+    </div>
+    
+    <div class="card-2">
+        <img id="img1" src="../Img/Produtos/5.jpg" alt="">
+        <p>Refeição Natural Zee Dog Kitchen </p>
+        <p>R$ 109,99</p>
+    </div>
+    
+    <div class="card-3">
+        <img id="img1" src="../Img/Produtos/6.jpg" alt="">
+        <p>Super Secão Citrus Tapete Higiênico</p>
+        <p>R$ 99,99</p>
+    </div>
+</section>
+<section>
+    <div class="card-1">
+        <img id="img1" src="../Img/Produtos/7.jpg" alt="">
+        <p>Ração Golden Special para Cães Adultos</p>
+        <p>R$ 154,99</p>
+    </div>
+    
+    <div class="card-2">
+        <img id="img1" src="../Img/Produtos/8.jpg" alt="">
+        <p>Refeição Natural Zee Dog Kitchen </p>
+        <p>R$ 109,99</p>
+    </div>
+    
+    <div class="card-3">
+        <img id="img1" src="../Img/Produtos/9.jpg" alt="">
+        <p>Super Secão Citrus Tapete Higiênico</p>
+        <p>R$ 99,99</p>
+    </div>
+</section>
+<!-- ------- Footer --------------- -->
+<footer>
+    <div class="f1">
+    <a href=""><img id="instagram" src="../Img/instagram 1.png" alt="Instagram"></a>
+    <a href=""><img id="facebook" src="../Img/facebook 1.png" alt="Instagram"></a>
+    <a href=""><img id="twitter" src="../Img/twitter 1.png" alt="Instagram"></a>
+</div>
+<div class="f2">
+    <a href=""><p id="sobre">Sobre</p></a>
+    <img id="line" src="../Img/Line 2.png" alt="line">
+    <a href=""><p id="contato">Contato</p></a>
+</div>
+    
+</footer>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="../Js/carousel.js"></script>
+<script src="../Js/navbar.js"></script>
+</body>
+</html>
