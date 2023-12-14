@@ -90,14 +90,21 @@ $result = $conexao->query($sql);
 
             // Exibe os cards de acordo com os resultados da consulta
             while ($row = $result->fetch_assoc()) {
+                $paracela = rand(2,10);
+                $precoVezes = number_format($row['preco']/$paracela,0);
+                
                 echo "<div class='card'>";
                 echo "<img src='" . $row['img'] . "' alt='Imagem do Produto'>";
                 echo "<h2>" . $row['nome'] . "</h2>";
                 echo "<p>" . $row['descricao'] . "</p>";
+                echo "<div class='comprar2'>";
                 echo "<div class='comprar'>";
-                echo "<p>R$ " . $row['preco'] . "</p>";
+                echo "<h3>R$ " . $row['preco'] . "</h3>";
+               
                 echo "<button type='button' id='comprar' name='comprar'>Comprar</button>";
                 
+                echo "</div>";
+                echo "<p class ='parcelado'> ou até ".$paracela. " vezes de R$ " . $precoVezes. "</p>";
                 echo "</div>";
                 echo "</div>";
             }
@@ -120,13 +127,36 @@ $result = $conexao->query($sql);
             justify-items: center;
             background-color: white;
         }
+        .card img{
+            width: 250px;
+            height: 250px;
+        }
         .comprar{
+            width: 100%;
             display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-left: 10px;
+            
+            
         }
         .comprar button{
-            width: 200px;
+            width: 150px;
             height: 50px;
+            border-radius: 20px;
+            background-color: #7A1858;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+            
+            
         }
+        .comprar h3{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
         
         .cards-container {
             display: flex;
@@ -153,6 +183,16 @@ $result = $conexao->query($sql);
             height: 20px;
             border-radius: 50%;
             cursor: pointer;
+        }
+        .comprar2{
+            width: 100%;
+            align-items: center;
+            display: grid;
+        }
+        .parcelado{
+            display: flex;
+            margin-left: -200px;
+            justify-content: center;
         }
 </style>
 <script>
