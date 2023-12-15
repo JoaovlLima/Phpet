@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
-    <link rel="stylesheet" href="/Solo/Css/about.css">
-    <link rel="stylesheet" href="/Solo/Css/header.css">
+    <link rel="stylesheet" href="./Css/about.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/footer.css">
 </head>
 
 <body>
@@ -15,10 +16,20 @@
    
     <nav>
         <div class="header1">
-            <a  href=""><img id="logo" src="/Solo/Img/Logo.png" alt="Logo"></a>
-            <a  href=""><img id="telefone" src="/Solo/Img/telefone.png" alt="Contato"></a>
-            <a  href=""><img id="carrinhoCompra" src="/Solo/Img/carrinhoCompra.png" alt="Carrinho de Compra"></a>
-            <a  href=""><img id="usuario" src="/Solo/Img/user.png" alt="Usuário"></a>
+            <a  href=""><img id="logo" src="./Img/Logo.png" alt="Logo"></a>
+            <a  href=""><img id="telefone" src="./Img/telefone.png" alt="Contato"></a>
+            <a  href=""><img id="carrinhoCompra" src="./Img/carrinhoCompra.png" alt="Carrinho de Compra"></a>
+            <a href="#" ><img id="usuario" src="./Img/user.png" alt="Usuário"></a>
+            <div class="log">
+                <div class="item">
+                <a href="#" ><img id="usuario" src="./Img/user.png" alt="Usuário"></a>
+                <a href="">...</a>
+                <a href="">...</a>
+                <a href="">...</a>
+                <a href="">...</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+            </div>
             <div class="menuHb">
                 <div class="linha1"></div>
                 <div class="linha2"></div>
@@ -37,7 +48,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- Site  -->
     <section class="sobre">
         <h1>Sobre</h1>
@@ -49,7 +59,7 @@
             O PHPet é um destino completo para donos de animais de estimação que desejam manter seus pets saudáveis e
             mimados.</p>
 
-        <img src="/Solo/Img/servicos-hospital-veterinario2.jpg" alt="">
+        <img src="./Img/servicos-hospital-veterinario2.jpg" alt="">
     </section>
     <section class="duvidas">
         <h1>Dúvidas Frequentes</h1>
@@ -58,16 +68,27 @@
             Acesse a opção “Veterinário”, que encontra-se na parte superior da tela, e siga os passos indicados. </p>
         <h3>2. Quais são os serviços veterinários oferecidos?</h3>
         <p> Nossas opções abraangem Consulta Médica especializada, Exames e Vacinação.</p>
-        <h3>3. Qual é o custo dos serviços veterinários?</h3>
     </section>
 
     <!-- Footer  -->
     <footer>
+        <div class="f1">
+        <a href=""><img id="instagram" src="./Img/instagram 1.png" alt="Instagram"></a>
+        <a href=""><img id="facebook" src="./Img/facebook 1.png" alt="Instagram"></a>
+        <a href=""><img id="twitter" src="./Img/twitter 1.png" alt="Instagram"></a>
+    </div>
+    <div class="f2">
+        <a href=""><p id="sobre">Sobre</p></a>
+        <img id="line" src="./Img/Line 2.png" alt="line">
+        <a href=""><p id="contato">Contato</p></a>
+    </div>
         
     </footer>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="/Solo/Js/navbar.js"></script>
+<script src="./Js/navbar.js"></script>
+<script src="./Js/usuario.js"></script>
+
 </body>
 
 </html>
